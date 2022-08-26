@@ -1,0 +1,15 @@
+#p1{
+ color: lightcyan ;
+ background-color: darkslategrey;
+ padding: 16px;
+ margin-top: 20px;
+}
+.paragraph{
+    text-align: right;
+    color: mediumturquoise;
+}
+
+h3{
+ text-align: center;
+ color: gold;
+}

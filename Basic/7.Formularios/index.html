@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <form id="dataForm">
+        <fieldset><legend>Datos Personales</legend>
+        <label for="name" >Nombre:</label>
+        <input type="text"
+        id="name"
+        name="name"
+        placeholder="Introduce tu nombre"
+        minlength="3"
+        maxlength="50"
+        title="Introduce almenos 3 caracteres, Maximo 50"
+        tabindex="0"
+        autofocus="true"
+        autocomplete="off"
+        required
+        ><br>
+        <select id="type document">
+            <option value="nada" selected>Seleccione un tipo de Documento</option>
+            <option value="cc">Cedúla de Identidad</option>
+            <option value="ti">Tarjeta de Identidad</option>
+            <option value="ce">Cédula Extranjera</option>
+        </select><br>
+        <label id="document"></label>
+        <input type="number" id="document" name="document" placeholder="Introduce tu documento de identidad"
+        min="2" max="99" tabindex="1" title="Mínimo un carácter, Maximó 99" autofocus="true" autocomplete="off" required>
+        <label for="estadocivil">Estado Civil:</label><!--For sin espacios-->
+        <input type="radio" name="eCivil" id="eCivil" value="soltero">Solter@<!--Única(Radio) o multiple selección(Check)-->
+        <input type="radio" name="eCivil" id="eCivil" value="casad@">Casad@<!--Igual name-->
+        <input type="radio" name="eCivil" id="eCivil" value="divorciad@">Divorciad@
+        <input type="radio" name="eCivil" id="eCivil" value="viud@">Viud@
+
+        </fieldset>
+        <fieldset><legend>Información de Estudio y Otros:</legend>
+            <label for="hora">Hora</label>
+            <input type="time" min="7:00" max="18:00">
+            <label for="range"></label>
+            <input type="range" min="10" max="50">
+            <label for="tel"></label>
+            <input type="tel">
+            <label for="colores">Color Favorito</label>
+            <input type="color" id="colores">
+            <label for="date">Fecha de Inscripción</label>
+            <input type="date" id="date">
+            <br><label for="documentFile">Cargue los documentos requeridos:</label>
+            <input type="file" name="file" id="documentFile">
+            
+        </fieldset><hr>
+        <label for="lenguajes" >Lengujaes de Programación</label>
+        <select name="lenguajes" id="lenguajes">
+            <optgroup label="Lenguajes Tipados">
+                <option value="java">Java</option>
+                <option value="csharp">C#</option>
+                <option value="c">C++</option>
+            </optgroup>
+            <optgroup label="Lenguajes no Tipados">
+                <option value="python">Python</option>
+                <option value="javascript">Javascript</option>
+            </optgroup>
+        </select><br>
+        <label for="terminos">¿Acepta Terminos y Condiciones?</label>
+        <input type="checkbox" id="terminos"><hr>
+        <input type="submit" value="Envío de Datos"><!--PHP-->
+        <button id="validar">Validar</button><!--JS-->
+    </form>
+    <script src="./Assets/Scripts/main.js"></script>
+</body>
+</html>
+tel
+week
+url 
+reset
+text area
+datalist
+hidden

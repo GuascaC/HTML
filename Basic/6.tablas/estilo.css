@@ -1,0 +1,39 @@
+table{
+    text-align: center;
+    border-collapse: collapse;
+    border: 2px solid darkblue;
+}
+thead tr, th{
+    text-align: center;
+    background-color: gray;
+    border: 3px solid black;
+    width: 7%;
+    height: 12%;
+}
+tbody td {
+    text-align: center;
+    border: 3px solid black;
+    background-color: cornflowerblue;
+}
+tfoot{
+    text-align: center;
+}
+h1{
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+tfoot{
+    text-align: center;
+}
+html{
+    background-color: beige;
+}
+.img{
+    width: 200px;
+    height: 200px;
+    border: 5px dotted gold;
+    image-rendering: pixelated;
+    text-align : center;
+}

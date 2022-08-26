@@ -1,0 +1,22 @@
+.container{
+    color: lightcyan ;
+    background-color: darkslategrey;
+    padding: 16px;
+    margin-top: 20px;
+    text-align: center;
+    width: auto;
+    height: auto;
+}
+img{
+    width: 200px;
+    height: 200px;
+    border: 5px dotted gold;
+    image-rendering: pixelated;
+}
+article{
+    color: lightcyan ;
+    background-color: darkslategrey;
+    padding: 16px;
+    margin-top: 20px;
+    text-align: center;
+   }
