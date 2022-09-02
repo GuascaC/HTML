@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<head>
+ <style>
+ table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+ }
+ td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+ }
+ </style>
+ <title>Vectition</title>
+ <link rel="icon" type="image/x-icon" href="/D:\Documentos Guaskita\Descargas\v.jpg">
+ <script type="text/javascript">
+   function C1(){
+
+    var a1 = Number(document.getElementById('a1').value);   
+    var m1 = Number(document.getElementById('m1').value);  
+    if((-360<a1) && (a1<=360)){
+    var X1 = m1 * Math.cos(a1 * 0.01745) ;
+    var Y1 = m1 * Math.sin(a1 * 0.01745) ;
+
+    X1 = X1.toFixed(2);
+    Y1 = Y1.toFixed(2);
+
+    document.getElementById('X1').value = X1
+    document.getElementById('Y1').value = Y1
+    }
+  }
+ 
+ 
+     function C2(){
+
+    var a2 = Number(document.getElementById('a2').value);   
+    var m2 = Number(document.getElementById('m2').value);   
+    if((-360<a2) && (a2<=360)){
+    var X2 = m2 * Math.cos(a2 * 0.01745) ;
+    var Y2 = m2 * Math.sin(a2 * 0.01745) ;
+    X2 = X2.toFixed(2);
+    Y2 = Y2.toFixed(2);
+ 
+    document.getElementById('X2').value = X2
+    document.getElementById('Y2').value = Y2
+    }
+  }
+      function C3(){
+
+    var a3 = Number(document.getElementById('a3').value);   
+    var m3 = Number(document.getElementById('m3').value);   
+    if((-360<a3) && (a3<=360)){
+    var X3 = m3 * Math.cos(a3 * 0.01745) ;
+    var Y3 = m3 * Math.sin(a3 * 0.01745) ;
+
+    X3 = X3.toFixed(2);
+    Y3 = Y3.toFixed(2);
+ 
+    document.getElementById('X3').value = X3
+    document.getElementById('Y3').value = Y3
+    }
+  }
+     function C4(){
+
+    var a4 = Number(document.getElementById('a4').value);   
+    var m4 = Number(document.getElementById('m4').value);   
+    if((-360<a4) && (a4<=360)){
+    var X4 = m4 * Math.cos(a4 * 0.01745) ;
+    var Y4 = m4 * Math.sin(a4 * 0.01745) ;
+
+    X4 = X4.toFixed(2);
+    Y4 = Y4.toFixed(2);
+ 
+    document.getElementById('X4').value = X4
+    document.getElementById('Y4').value = Y4
+    }
+  }
+     function S(){ 
+
+    var X1 = Number(document.getElementById('X1').value);
+    var X2 = Number(document.getElementById('X2').value);
+    var X3 = Number(document.getElementById('X3').value);
+    var X4 = Number(document.getElementById('X4').value);  
+    var Y1 = Number(document.getElementById('Y1').value);  
+    var Y2 = Number(document.getElementById('Y2').value); 
+    var Y3 = Number(document.getElementById('Y3').value); 
+    var Y4 = Number(document.getElementById('Y4').value); 
+    var Xf = Number(document.getElementById('Xf').value); 
+    var Yf = Number(document.getElementById('Yf').value); 
+
+
+    var Xf = X1 + X2 + X3 + X4 ;
+    var Yf = Y1 + Y2 + Y3 + Y4 ;
+    var Vf = Math.sqrt(Math.pow(Xf,2)) + (Math.pow(Yf,2)) ;
+    var A = Math.atan(Yf / Xf) * 57.296;
+
+    Vf = Vf.toFixed(2);
+    A = A.toFixed(2);
+ 
+    document.getElementById('Xf').value = Xf
+    document.getElementById('Yf').value = Yf
+    document.getElementById('Vf').value = Vf
+    document.getElementById('A').value = A
+  }
+
+  </script>
+</head>
+
+<body>
+ <center><h1> Vectition </h1></center>
+ <p>Bienvenido a Vectition ,antes de comenzar, repasemos los conceptos necesarios para el uso de este software.<br>Un vector es un segmento o recta en una plano cartesiano que representa una cantidad(magnitud) y una dirección(Ángulo) dentro de los 360 grados.<br><center><img src="D:\Documentos Guaskita\Descargas\vector-00.svg_bg.png"></center><br>Sumado a esto cuenta con un sentido(hacia donde señala la flecha) y un punto de aplicación(Inicio).<br>También repasamos las tres leyes básicas de Isaac Newton(1643-1727).<br><center><img src="D:\Documentos Guaskita\Descargas\Sir_Isaac_Newton_(1643-1727).jpg"></center><br><center><h2>"Primera ley o ley de la inercia</h2></center><br>‘Todo cuerpo continúa en su estado de reposo o movimiento uniforme en línea recta, no muy lejos de las fuerzas impresas a cambiar su posición’;Esta ley postula que un cuerpo va a estar en un estado de reposo indefinido hasta que se aplique una fuerza externa que rompa el equilibrio.’<br><center><img src="D:\Documentos Guaskita\Descargas\cual-es-la-primera-ley-de-newton.webp"></center><br><center><h2>Segunda ley o ley fundamental de la dinámica</h2></center>
+    <br>‘El cambio de movimiento es directamente proporcional a la fuerza motriz impresa y ocurre según la línea recta a lo largo de la cual aquella fuerza se imprime.’Esta ley establece que la fuerza que se le aplica a un objeto se llama fuerza neta, y que un cambio en la velocidad de un objeto de denomina aceleración,este cambio puede ser tanto en la magnitud como en la dirección,También cabe resaltar que la fuerza es la masa por la aceleración.<br><center><img src="D:\Documentos Guaskita\Descargas\segunda-ley-de-newton-aceleracion-fuerza-velocidad-masa-formula-e1565542958443.jpg"></center><br><center><h2>Tercera ley (Acción-reacción)</h2></center><br>‘Con toda acción ocurre siempre una reacción igual y contraria: quiere decir que las acciones mutuas de dos cuerpos siempre son iguales y dirigidas en sentido opuesto’<br>Esta ley explica como funciona un sistema en equilibrio dado que un objeto se va a encontrar en reposo puesto que la suma de todas sus fuerzas es 0, por lo que para cada fuerza que afecta a un cuerpo hay una fuerza de igual magnitud pero en sentido contrario, quiere decir opuesta, Por ejemplo la fuerza de gravedad y la fuerza normal.<br><center><img src="D:\Documentos Guaskita\Descargas\Acción_y_reacción_.jpeg"></center><br>
+</p><br>
+<table>
+ <tr> <th colspan="3"><center> Vector 1 </center></tr> </th> <tr> <th>
+ Ingrese la Magnitud <input type="text" id="m1"></th>
+ <th> Ingrese el Ángulo <input type="text" id="a1"></th>
+ <th> </tr> 
+ <tr> <th> Componente en X: <input type="text" id="X1"></th>
+ <th>Componente en Y: <input type="text" id="Y1"></th>
+ <tr> <th><input type="button" value="Calcular" onclick="C1()"></tr></th> </table> <table> <tr> <th colspan="3">
+ <center>Vector 2</center> </tr> </th> <tr> <th>
+ Ingrese la Magnitud <input type="text" id="m2"></th>
+ <th>Ingrese el Ángulo <input type="text" id="a2"></th> <th> </tr> 
+ <th>Componente en X: <input type="text" id="X2"></th>
+ <th>Componente en Y: <input type="text" id="Y2"></th>
+ <tr> <th><input type="button" value="Calcular" onclick="C2()"></tr></th> </table>
+ <table> <tr> <th colspan="3"><center> Vector 3 </center></tr> </th> <tr> <th>
+ Ingrese la Magnitud <input type="text" id="m3"></th><th>
+ Ingrese el Ángulo <input type="text" id="a3"></th><th></tr><tr><th>
+ Componente en X: <input type="text" id="X3"></th><th>
+ Componente en Y: <input type="text" id="Y3"></th><th><tr> <th>
+ <input type="button" value="Calcular" onclick="C3()"></tr></th> </table>
+ <table> <tr> <th colspan="3"><center> Vector 4 </center></tr> </th> <tr> <th>
+ Ingrese la Magnitud <input type="text" id="m4"></th><th>
+ Ingrese el Ángulo <input type="text" id="a4"></th><th></tr><th>
+ Componente en X: <input type="text" id="X4"></th><th>
+ Componente en Y: <input type="text" id="Y4"></th><th><tr> <th>
+ <input type="button" value="Calcular" onclick="C4()"></tr></th> </table> <table> <tr> <th>
+ Componente en X Total : <input type="text" id="Xf"></th><th>
+ Componente en Y Total : <input type="text" id="Yf"></th><th></tr><th>
+Vector Final : <input type="text" id="Vf"></th><th>
+Ángulo Final : <input type="text" id="A"></th><th></tr><th>
+ <input type="button" value="Calcular" onclick="S()"></tr></th> </table>
+ <p>Fuentes: Rada García, Eloy (trad.) (2003). «Principios matemáticos de la filosofía natural». apud. Newton. Vida, pensamiento y obra, p. 199. A hombros de gigantes. Las grandes obras de la física y la Astronomía (Barcelona: Crítica); Isaac Newton, extractos de Principios matemáticos de la filosofía natural, cit., p. 199;Capecchi, Danilo,. The problem of the motion of bodies : a historical view of the development of classical mechanics. ISBN 978-3-319-04840-6. OCLC 883738404. Consultado el 23 de enero de 2021."<br>Copyright CGSoftware 2022</p>
+
+</body>
+</html>
